@@ -1,0 +1,32 @@
+body {
+    display: block;
+    height: 100%;
+    width: 100%;
+    background: #dbd8e3;
+    animation: color-me-in 15s infinite;
+  }
+  
+  @keyframes color-me-in {
+    0% {
+      background: #dbd8e3;
+    }
+
+    20% {
+        background: #352f44
+    }
+
+    40%{
+        background: #2a2438
+    }
+
+    60%{
+        background: #352f44
+    }
+    80%{
+        background: #5c5470
+    }    
+
+    100% {
+        background: #dbd8e3;
+      }
+  }
