@@ -19,7 +19,7 @@ if (validateUserRegister($register_username, $register_password)) {
     fwrite($fp, $text_value);
     echo ("<h1>CADASTRO REALIZADO COM SUCESSO");
     sleep(3);
-    header('location: /index.php');
+    header('location: /index.html');
 
 } else {
     echo ("
