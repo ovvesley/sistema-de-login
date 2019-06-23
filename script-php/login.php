@@ -13,34 +13,22 @@ function isSubscript($login_username, $login_password)
         $text = str_getcsv($line);
         if ($login_username == $text[0] && $login_password === $text[1]) {
             echo ('<br>' . 'USUARIO POSSUI NO REGISTRO' . '<br>');
+
             return true;
         }
     }
-    // var_dump($data);
     return false;
 }
 
+$status_login = (isSubscript($login_username, $login_password));
 
-if (!isSubscript($login_username, $login_password)) {
+
+if (!$status_login) {
     echo ('<h1> LOGIN OU SENHA NÃO CADASTRADA </h1>');
-    header('Location: /index.php');
+    header('Location: /index.html');
+    $_SESSION['permission'] = 0;
+} else {  
+    session_start();
+    $_SESSION['permission'] = 1;
+    header("Location:./area_secreta.php");
 }
-
-
-
-?>
-<!DOCTYPE html>
-<html lang="pt-br">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>BEM VINDO</title>
-</head>
-
-<body>
-
-</body>
-
-</html>
