@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/animation-background.css">
     <script src=""></script>
-    <title>My_BOOK</title>
+    <title>Sistema de Login</title>
 </head>
 <body>
     <div class="content">
