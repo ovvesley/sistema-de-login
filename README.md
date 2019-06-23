@@ -7,4 +7,4 @@
 
 [ Link para acesso do Sistema LOGIN ](http://sadsasadfewfsdwe4ef.eu5.org/index.html) 
 
-![code-exemple](/redme/exemple.png)
+![code-exemple](exemple.png)
