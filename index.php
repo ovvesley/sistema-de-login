@@ -6,28 +6,25 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="dist/css/style.css">
     <link rel="stylesheet" href="dist/css/animation-background.css">
-
     <script src=""></script>
-
     <title>My_BOOK</title>
 </head>
-
 <body>
     <div class="content">
         <!-- LOGIN -->
         <div class="login" id="login-content">
-            <form action="script-php/login.php">
+            <form action="script-php/login.php" method="POST">
                 <label class="login-input">
                     <span>Usuario</span>
-                    <input type="text" name=""  class=" login-input-text">
+                    <input type="text" name="login_username"  class=" login-input-text">
                 </label>
                 <label class="login-input">
                     <span>Senha</span>
-                    <input type="password" name="" id="login-input-password" class="login-input-text">
+                    <input type="password" name="login_password" id="login-input-password" class="login-input-text">
                 </label>
                 <label class="login-input">
                     <span>OK</span>
-                    <input type="submit" value="" id="login-input-button">
+                    <input type="submit" id="login-input-button">
                 </label>
                 <label class="login-input">
                     <span>Registrar</span>
@@ -38,27 +35,25 @@
 
         <!-- REGISTRO -->
         <div class="register" id="register-content" style="display: none">
-            <form action="">
+            <form action="/script-php/register.php" method="POST">
                 <label class="login-input">
                     <span>Usuario</span>
-                    <input type="text" name=""  class=" login-input-text">
+                    <input type="text" name="register_username"  class=" login-input-text">
                 </label>
                 <label class="login-input">
                     <span>Senha</span>
-                    <input type="password" name="" id="register-input-password" class="login-input-text">
+                    <input type="password" name="register_password" id="register-input-password" class="login-input-text">
                 </label>
                 <label class="login-input">
                     <span>Confirmar senha</span>
-                    <input type="password" name="" id="register-input-password " class="login-input-text">
+                    <input type="password" name="register_password" id="register-input-password " class="login-input-text">
                 </label>
                 <label class="login-input">
                     <span>OK</span>
-                    <input type="submit" value="" id="register-input-register-confirm" class="">
+                    <input type="submit" id="register-input-register-confirm" >
                 </label>
             </form>
         </div>
-
-
     </div>
     <script src="dist/js/register-enable.js"></script>
 </body>
